@@ -110,7 +110,7 @@ h2.top_heading:before { background: url(../images/top_heading_img.png); width: 6
 .top_button { display: inline-block; width: 420px; height: 80px; margin-top: 11px; background: url(../images/top_button.png) no-repeat;}
 .light-blue { position: absolute; width: 100%; left: 0px; background: #31689e; height: 560px; top: 760px; z-index: 97   }
 
-.check_prices { display: block; width:360px; height: 80px; background: url(../images/check_prices.png); }
+
 h3 { font-size: 36px; color: #fff; font-weight: normal;padding-bottom: 45px;}
 .left_block { margin-top: 70px; float: left; width: 460px; padding-left: 20px;}
 .right_block { margin-top: 70px; float: right; width: 460px; margin-right: -35px; }
@@ -1011,6 +1011,12 @@ h3 { font-size: 36px; color: #fff; font-weight: normal;padding-bottom: 45px;}
 .directions li { text-transform: uppercase; color: #444444; height: 80px; line-height: 80px; padding: 0 20px; font-size: 18px;}
 .direction { display: inline-block; background: url(../images/direction.png); width: 19px; height: 19px; margin: 0 6px -3px}
 .directions li a { background: #fdba31; border-bottom: 2px solid #d68b16; margin-top: 19px; float: right; height: 39px; line-height: 41px; color: #fff; width: 160px; text-align: center; font-weight: bold; font-size: 18px;}
+.directions li a:hover{background: #FEC761;}
+.directions li a:active{
+    background: #EAA52F;
+    border-top: 2px solid #C88923;
+    border-bottom: none;
+}
 .directions li:nth-child(even) { background: #f8f8f8;}
 .directions li:nth-child(odd) { background: #f1f1f1;}
 .footer_title { font-size: 18px; line-height: 28px; margin-top: -6px; padding-bottom: 22px;}
@@ -1145,4 +1151,25 @@ h3 { font-size: 36px; color: #fff; font-weight: normal;padding-bottom: 45px;}
     font-family: pbold,sans-serif;
     font-size: 48px;
     font-weight: normal;
+}
+
+.check_prices { 
+    display: block; width:360px; 
+    height: 80px; 
+    line-height: 80px;
+    color: #fff;
+    font-family: pbold,sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0,0,0, .5);
+    background: #FBB942;
+    border-bottom: 3px solid #CC8E26;
+}
+.check_prices:hover{
+    background: #FEC761;
+}
+.check_prices:active{
+    background: #EAA52F;
+    border-top: 3px solid #C88923;
+    border-bottom: none;
 }

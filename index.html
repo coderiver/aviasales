@@ -17,6 +17,9 @@
             }, 400);
             return false;
         });
+        $('.popup__close').click(function(event) {
+            $('.popup').hide();
+        });
     });
     </script>
 </head>
@@ -83,13 +86,14 @@
                 </div>
                 <div class="btn_holder">
                     <a href="#" class="check_prices">Проверить цены</a>
-                    <a href="#Stage_frame_2_head2" data-scrollto="s3" class="js-scrollto howto">Следующий вариант</a>
+                    <!-- <a href="#Stage_frame_2_head2" data-scrollto="s3" class="js-scrollto howto">Следующий вариант</a> -->
                 </div>
             </div>
         </div>
         <!-- end centerme -->
         </div>
         <!-- end container -->
+        <a href="#" data-scrollto="s3"  class="scroll_link scroll_link1 js-scrollto">Проскролль вниз, чтобы увидеть следующий вариант</a>
     </div>
     <!-- end section -->
 
@@ -119,7 +123,7 @@
                 </div>
                 <div class="btn_holder">
                     <a href="#" class="check_prices">Проверить цены</a>
-                    <a href="#Stage_frame_3_head2" data-scrollto="s4" class="js-scrollto howto">Следующий вариант</a>
+                   
                 </div>
             </div>
             <!-- end section3__content -->
@@ -127,6 +131,7 @@
         <!-- end centerme -->
         </div>
         <!-- end container -->
+        <a href="#" data-scrollto="s4"  class="scroll_link scroll_link1 js-scrollto">Проскролль вниз, чтобы увидеть следующий вариант</a>
     </div>
     <!-- end section -->
 
@@ -160,6 +165,7 @@
         </div>
         </div>
         <!-- end container -->
+        <a href="#" data-scrollto="s5"  class="scroll_link scroll_link1 js-scrollto">Как купить дешевый авиабилет</a>
     </div>
     <!-- end section -->
     
@@ -228,5 +234,53 @@
         </div>
     </div>
 
+<!-- begin popup  -->
+<div class="popup">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+        <h3>Студент! </h3>
+        <p>Введи промокод и ищи билеты со скидкой.</p>
+        <div class="popup__form">
+            <input type="text" name="" placeholder="Введи промокод" id="">
+            <a href="#" class="btn">Ок</a>
+        </div>
+        <p>До окончания промокода осталось 30 дней</p>
+    </div>
+</div>
+<!-- end popup -->
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24519101&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/24519101/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:24519101,lang:'ru'});return false}catch(e){}"/></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24519101 = new Ya.Metrika({id:24519101,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24519101" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>

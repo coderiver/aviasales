@@ -997,9 +997,13 @@ h3 { font-size: 36px; color: #fff; font-weight: normal;padding-bottom: 45px;}
 .social ul li { float: left; margin-left: 19px;}
 .social ul { float: right; margin-top: 19px;}
 .social ul li a { display: block; width:41px; height: 41px; background: url(../images/social_sprite.png); }
+.social ul li a:hover { background: url(../images/fb1.png) no-repeat 0px 0; }
 .social ul li a.tw { background-position: 100% 0}
+.social ul li a.tw:hover { background: url(../images/tw1.png) no-repeat 0px 0; }
 .social ul li a.go { background-position:  0 100%}
+.social ul li a.go:hover { background: url(../images/gp1.png) no-repeat 0px 0; }
 .social ul li a.vk { background-position:  100% 100%}
+.social ul li a.vk:hover { background: url(../images/vk1.png) no-repeat 1px 0; }
 .social {padding: 0 20px;
       height: 80px; line-height: 80px; background: #e2e2e2;}
 .directions { margin-bottom: 41px;}

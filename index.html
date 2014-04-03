@@ -23,17 +23,24 @@
         $('.popup__content input').focus(function(event) {
             $('.popup__content').removeClass('is-error');
         });
-        $('.popup__form .btn').click(function(event) {
-           if($('.popup__content input').val()=='student'){
+        function valid(){
+            if($('.popup__content input').val()=='student'){
                 $('.popup').hide();
 
            }
            else{
                 $('.popup__content').addClass('is-error');
            }
+        }
+        $('.popup__form .btn').click(function(event) {
+           valid();
            return false;
+        });
 
-
+        $(".popup__content input").keyup(function (e) {
+            if (e.keyCode == 13) {
+                valid();
+            }
         });
     });
     </script>
@@ -90,13 +97,13 @@
                 <div class="columns clearfix">
                     <ul>
                         <li class="airplane">Самолетом</li>
-                        <li class="clock">2 часа 20 минут *</li>
-                        <li class="price">7 891 рублей **</li>
+                        <li class="clock">2 часа 20 минут&nbsp;<a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">7 891 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                     <ul>
                         <li class="coupe">Купе</li>
-                        <li class="clock">25 часов *</li>
-                        <li class="price">7 200 рублей **</li>
+                        <li class="clock">25 часов <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">7 200 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                 </div>
                 <div class="btn_holder">
@@ -127,13 +134,13 @@
                 <div class="columns clearfix">
                     <ul>
                         <li class="airplane">Самолетом</li>
-                        <li class="clock">2 часа 10 минут *</li>
-                        <li class="price">5 715 рублей **</li>
+                        <li class="clock">2 часа 10 минут&nbsp;<a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">5 715 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                     <ul>
                         <li class="coupe">Плацкартом</li>
-                        <li class="clock">22 часов *</li>
-                        <li class="price">5 200 рублей **</li>
+                        <li class="clock">22 часов <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">5 200 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                 </div>
                 <div class="btn_holder">
@@ -163,18 +170,18 @@
                 <div class="columns clearfix">
                     <ul>
                         <li class="airplane">Самолетом</li>
-                        <li class="clock">4 часа *</li>
-                        <li class="price">8 926 рублей **</li>
+                        <li class="clock">4 часа <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">8 926 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                     <ul>
                         <li class="coupe">Плацкартом</li>
-                        <li class="clock">47 часов *</li>
-                        <li class="price">10 000 рублей **</li>
+                        <li class="clock">47 часов <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
+                        <li class="price">10 000 рублей <a href="#" data-scrollto="legend" class="tolegend js-scrollto">**</a></li>
                     </ul>
                 </div>
                 <div class="btn_holder">
                     <a href="http://avs.io/wx" class="check_prices">Проверить цены</a>
-                    <a href="#" class="howto js-scrollto" data-scrollto="s5">Как купить дешевый авиабилет</a>
+                   
                 </div>
             </div>
         </div>
@@ -220,6 +227,9 @@
                             <li><a href="#" class="vk"></a></li>
                         </ul>
 
+                    </div>
+                    <div class="legend" id="legend">
+                        * — В одну сторону &nbsp;    ** — Туда и обратно
                     </div>
                 </div>
                 <div class="right_col">

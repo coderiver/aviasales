@@ -1321,3 +1321,13 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     height: 1px;
     overflow: hidden;
 }
+.tolegend{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.legend{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444444;
+}

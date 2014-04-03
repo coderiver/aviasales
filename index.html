@@ -18,7 +18,10 @@
             return false;
         });
         $('.popup__close,.popup .btn').click(function(event) {
-            //$('.popup').hide();
+            $('.popup').hide();
+        });
+        $('.popup__content input').focus(function(event) {
+            $('.popup__content').removeClass('is-error');
         });
         $('.popup__form .btn').click(function(event) {
            if($('.popup__content input').val()=='student'){

@@ -18,9 +18,20 @@
             return false;
         });
         $('.popup__close,.popup .btn').click(function(event) {
-            $('.popup').hide();
+            //$('.popup').hide();
         });
-        $('.popup__form').click
+        $('.popup__form .btn').click(function(event) {
+           if($('.popup__content input').val()=='student'){
+                $('.popup').hide();
+
+           }
+           else{
+                $('.popup__content').addClass('is-error');
+           }
+           return false;
+
+
+        });
     });
     </script>
 </head>
@@ -239,17 +250,19 @@
 <!-- begin popup  -->
 <div class="popup">
     <div class="popup__close"></div>
-    <form class="popup__content">
+    <div class="popup__content">
         <h3>Студент! </h3>
         <p>Введи промокод и ищи билеты со скидкой.</p>
         <div class="popup__form">
+        <div class="error">Неправильный код<i></i></div>
             <input type="text" name="" placeholder="Введи промокод" id="">
             <a href="#" class="btn">Ок</a>
         </div>
         <p>До окончания промокода осталось 30 дней</p>
-    </form>
+    </div>
 </div>
 <!-- end popup -->
+<div class="metrika">
 
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=24519101&amp;from=informer"
@@ -284,5 +297,6 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/24519101" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+</div>
 </body>
 </html>

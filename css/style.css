@@ -1254,6 +1254,42 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     padding: 0 23px;
     vertical-align: top;
 }
+.popup .error{
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    text-shadow: 0 1px 1px rgba(29,26,22,.2);
+    width: 338px;
+    background: #E13A21;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    margin-left: -169px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.popup .is-error .error{
+    z-index: 20;
+    opacity: 1;
+}
+.popup .is-error input{
+    border: 3px solid #E13A21;
+    width: 344px;
+    height: 64px;
+}
+.popup .error i{
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    margin-left: -15px;
+    bottom: -15px;
+    left: 50%;
+    background: url(../images/arr.png) no-repeat 0 0;
+}
 
 .btn { 
     display: inline-block; 
@@ -1278,4 +1314,10 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     background: #EAA52F;
     border-top: 3px solid #C88923;
     border-bottom: none;
+}
+.metrika{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }

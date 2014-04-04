@@ -1,14 +1,25 @@
 ﻿<!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru" itemscope itemtype="http://schema.org/Article"><head>
 	<meta charset="utf-8" />
 	<title></title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' href="css/style.css" media="screen" />
     <meta name="viewport" content="width=1180">
     <link id="page_favicon" href="/favicon.ico" rel="icon" type="image/x-icon" />
-    <script src="js/jquery-2.0.3.min.js"></script>
+    
+    <meta property="og:title" content="title" />
+    <meta property="og:description" content="description" />
+    <meta property="og:image" content="images/share.png"/>
+    <meta itemprop="name" content="My Cool Article">
+    <meta itemprop="description" content="This is the greatest site ever">
+    <meta itemprop="image" content="images/share.png">
 
+
+
+    <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/social-likes_birman.css">
+    <script src="js/social-likes.min.js"></script>
     <script>
     $(document).ready(function() {
         $(".js-scrollto").click(function() {
@@ -70,6 +81,14 @@
                         <p> На самолете же ты долетишь за 2 часа туда и заплатишь 5800 рублей в оба конца. И сэкономишь 40 часов своей личной жизни, которые сможешь потратить в свое удовольствие.</p>
                         <p>Полезные советы от Aviasales.ru помогут тебе сэкономить время и деньги.
                             Мы ищем авиабилеты уже шесть лет и знаем в этом толк.</p>
+
+                            <div class="shareme">
+                                <div class="social-likes">
+                                    <div class="facebook" title="Share link on Facebook">Facebook</div>
+                                    <div class="twitter" title="Share link on Twitter">Twitter</div>
+                                    <div class="plusone" title="Share link on Google+">Google+</div>
+                                </div>
+                            </div>
                     
                     <!-- end column -->
                 </div>

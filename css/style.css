@@ -1553,9 +1553,9 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     }
     .directions li a{
         height: 20px;
-        width: 90px;
+        width: 70px;
         line-height: 21px;
-        font-size: 12px;
+        font-size: 10px;
         position: relative;
         top: -5px;
     }

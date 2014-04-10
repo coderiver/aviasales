@@ -1335,7 +1335,7 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
 }
 
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 780px){
     body{
         min-width: 0;
     }

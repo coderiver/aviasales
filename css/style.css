@@ -995,6 +995,7 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
 .footer .info h4 { font-size: 24px; font-style: italic; padding-bottom: 8px; font-weight: normal;}
 .footer .info p+p { margin-top: 30px;}
 .social_title { font-size: 18px; color: #444444; text-transform: uppercase; float: left}
+.social1{display: none;}
 .social ul li { float: left; margin-left: 19px;}
 .social ul { float: right; margin-top: 19px;}
 .social ul li a { display: block; width:41px; height: 41px; background: url(../images/social_sprite.png); }
@@ -1333,7 +1334,11 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
 .shareme{
     padding-top: 5px;
 }
-
+.section h2 b{
+    font-size: 48px;
+    font-weight: bold;
+    font-weight: normal;
+}
 
 @media only screen and (max-width: 780px){
     body{
@@ -1541,16 +1546,18 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
         display: block;
     }
     .directions li{
-        font-size: 13px;
+        font-size: 11px;
         padding: 0 10px;
         height: 50px;
         line-height: 50px;
     }
     .directions li a{
         height: 20px;
-        width: 95px;
+        width: 90px;
         line-height: 21px;
         font-size: 12px;
+        position: relative;
+        top: -5px;
     }
     .legend{
         width: 90%;
@@ -1588,16 +1595,34 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     .social{
         height: 58px;
         line-height: 58px;
+        position: relative;
+        top: 11px;
     }
+    .popup .error{
+        left: 0;
+        margin-left: 0;
+        width: 300px;
+    }
+    .popup .is-error input{
+    
+    width: 248px;
+    
+}
     .social ul{
         margin-top: 10px;
     }
     .social_title{
         font-size: 10px;
     }
+    .social ul li{
+        margin-left: 10px;
+    }
     /*bottom*/
     .left_col,.right_col{
         float: none;
         width: auto;
+    }
+    .section h2 b{
+        display: none;
     }
 }

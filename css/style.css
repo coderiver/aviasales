@@ -1339,6 +1339,18 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
     body{
         min-width: 0;
     }
+    .popup__content{
+        width: 300px;
+        margin-left: -150px;
+    }
+    .popup__content input{
+        width: 254px;
+    }
+    .popup__content .btn{
+        width: 300px;
+        display: block;
+        margin: 0;
+    }
     .section3,.section2,.section4{
         background-image: none;
     }
@@ -1346,7 +1358,7 @@ h3 a{font-size: 36px;text-decoration: none;color: #fff;}
         width: auto;
         padding: 0;
     }
-    .popup,.scroll_link,.shareme{
+    .scroll_link,.shareme{
         display: none;
     }
     .centerme{
